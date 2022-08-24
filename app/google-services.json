@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518798417218",
+    "project_id": "bromide",
+    "storage_bucket": "bromide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518798417218:android:3019e010e55d0d1ceafcdb",
+        "android_client_info": {
+          "package_name": "com.example.bromide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518798417218-75h0sv40uq63br77uun592mf992k2lit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjWl5fHyXGrlupxv84myQtsAeypURUSus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518798417218-75h0sv40uq63br77uun592mf992k2lit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
