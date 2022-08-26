@@ -8,7 +8,7 @@
     android:background="@drawable/ic_app_background">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/profileImage"
         android:layout_width="272dp"
         android:layout_height="271dp"
         android:layout_marginTop="90dp"
@@ -19,13 +19,13 @@
         tools:ignore="ImageContrastCheck,ImageContrastCheck" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/uploadImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="-20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImage"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage"
+        app:layout_constraintStart_toStartOf="@+id/profileImage"
         app:srcCompat="@drawable/ic_baseline_camera_24"
         android:contentDescription="User Avatar" />
 
@@ -41,7 +41,7 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+        app:layout_constraintTop_toBottomOf="@+id/profileImage">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,11 +57,10 @@
                 android:hint="Name"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:text="Name"
                 android:autofillHints="Name" />
 
             <Button
-                android:id="@+id/btn_continue"
+                android:id="@+id/btnContinue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="6dp"

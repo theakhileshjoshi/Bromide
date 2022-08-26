@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
@@ -85,9 +86,11 @@ public class VerifyotpActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(VerifyotpActivity.this,"Logged In",Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(VerifyotpActivity.this,ProfileSetupActivity.class);
+                            startActivity(intent);
+                            finishAffinity();
                         }else{
-                            Toast.makeText(VerifyotpActivity.this,"Not Logged In",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(VerifyotpActivity.this,"Invalid OTP",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

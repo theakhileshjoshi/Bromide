@@ -1,13 +1,13 @@
 package com.example.bromide;
 
-public class user {
+public class User {
     private String uid, name,phoneNumber, profileImage;
 
-    public user(){
+    public User(){
 
     }
 
-    public user(String uid, String name, String phoneNumber, String profileImage) {
+    public User(String uid, String name, String phoneNumber, String profileImage) {
         this.uid = uid;
         this.name = name;
         this.phoneNumber = phoneNumber;
